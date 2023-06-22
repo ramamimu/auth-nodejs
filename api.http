@@ -1,0 +1,23 @@
+GET http://localhost:4444/
+
+###
+
+GET http://localhost:3333/api/
+
+###
+
+POST http://localhost:4444/api/login/
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "$2b$10$Z.9slwyMXhioXRBtNMbyYeVLYGoPPZ9dUAeD2Mlxj1a3ShP5hZ3Xu"
+}
+
+# "password": "$2b$10$Z.9slwyMXhioXRBtNMbyYeVLYGoPPZ9dUAeD2Mlxj1a3ShP5hZ3Xu"
+# "password": "admin"
+###
+GET http://localhost:4444/api/secret/
+
+###
+GET http://localhost:4444/api/logout/
